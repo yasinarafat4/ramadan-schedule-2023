@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ramadan-2023 Home</title>
+    <title>Ramadan-2023 Schedule</title>
     <!-- daisyUI links -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css"
@@ -15,17 +15,45 @@
   </head>
   <header>
     <!-- navbar section -->
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-      </div>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
 
-      <div class="navbar-end">
-        <a class="btn">Get started</a>
+        <div class="navbar-end">
+          <a class="btn">Get started</a>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
   <body class="bg-gray-600">
+    <!-- Time Section -->
+    <section class="md:flex justify-around m-4">
+      <!-- present-time-clock container starts-->
+      <div
+        class="conteinar drop-shadow-2xl border border-green-600 bg-slate-600 hover:bg-slate-500 shadow-green-500 shadow-lg text-3xl mt-10 p-10"
+      >
+        <h1 class="text-green-500 text-3xl font-bold">Present Time Clock :</h1>
+        <span class="text-green-500" id="hours">00</span>
+        <span class="text-green-500">:</span>
+        <span class="text-green-500" id="minute">00</span>
+        <span class="text-green-500">:</span>
+        <span class="text-green-500" id="seconds">00</span>
+        <span class="text-green-500" id="sesson">PM</span>
+      </div>
+      <!-- present-time-clock container ends-->
+
+      <!-- time left container starts -->
+      <div
+        class="border border-green-600 p-10 drop-shadow-2xl shadow-lg shadow-green-500 bg-slate-600 hover:bg-slate-500 text-gray-600 text-3xl text-center"
+      >
+        <h1 class="text-green-500 text-3xl font-bold">Time Left:</h1>
+        <p id="demo" class="text-green-500"></p>
+      </div>
+      <!-- time left container ends -->
+    </section>
+
     <p></p>
 
     <!-- custom js -->
