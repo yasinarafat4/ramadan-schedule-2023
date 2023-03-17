@@ -20,7 +20,7 @@ const displayTime = () => {
 };
 setInterval(displayTime, 10);
 
-const countDownDate = new Date("march 23, 2023 0:0:0").getTime();
+const countDownDate = new Date("march 24, 2023 0:0:0").getTime();
 
 const x = setInterval(function () {
   const now = new Date().getTime();
