@@ -14,67 +14,68 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <header>
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <nav class="bg-gray-600 drop-shadow-2xl shadow-lg shadow-green-500">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost text-green-500 lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </label>
-          <ul
-            tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 gap-2"
+              <li tabindex="0">
+                <a
+                  onclick="window.location.href = 'index.html'"
+                  class="btn btn-outline bg-green-500 text-gray-500"
+                  >Back to Home</a
+                >
+              </li>
+              <li>
+                <a
+                  onclick="window.location.href = 'schedule.html'"
+                  title="Click Here to Go to The Schedule Page"
+                  class="btn btn-outline bg-green-500 text-gray-500"
+                  >Back to Schedule</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a
+            class="btn btn-ghost normal-case text-green-500 text-xl md:text-3xl"
+            >Common FAQs About Ramadan</a
           >
-            <li tabindex="0">
-              <a
-                onclick="window.location.href = 'index.html'"
-                class="btn btn-outline bg-green-500 text-gray-500"
-                >Back to Home</a
-              >
-            </li>
-            <li>
-              <a
-                onclick="window.location.href = 'schedule.html'"
-                title="Click Here to Go to The Schedule Page"
-                class="btn btn-outline bg-green-500 text-gray-500"
-                >Back to Schedule</a
-              >
-            </li>
-          </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl"
-          >Common FAQs About Ramadan</a
-        >
-      </div>
 
-      <div
-        class="navbar-end d-flex justify-evenly navbar-center hidden lg:flex"
-      >
-        <a
-          onclick="window.location.href = 'index.html'"
-          class="btn btn-outline bg-green-500 text-gray-500"
-          >Back to Home</a
-        >
-        <a
-          onclick="window.location.href = 'schedule.html'"
-          title="Click Here to Go to The Schedule Page"
-          class="btn btn-outline bg-green-500 text-gray-500"
-          >Back to Schedule</a
-        >
+        <div class="navbar-end navbar-center hidden lg:flex gap-2">
+          <a
+            onclick="window.location.href = 'index.html'"
+            class="btn btn-outline bg-green-500 text-gray-500"
+            >Back to Home</a
+          >
+          <a
+            onclick="window.location.href = 'schedule.html'"
+            title="Click Here to Go to The Schedule Page"
+            class="btn btn-outline bg-green-500 text-gray-500"
+            >Back to Schedule</a
+          >
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
   <body></body>
 </html>
