@@ -1,3 +1,4 @@
+// Present Time Clock function
 const displayTime = () => {
   const date = new Date();
   let hour = date.getHours();
@@ -20,7 +21,8 @@ const displayTime = () => {
 };
 setInterval(displayTime, 10);
 
-const countDownDate = new Date("march 24, 2023 0:0:0").getTime();
+// Time Left function
+const countDownDate = new Date("march 23, 2023 0:0:0").getTime();
 
 const x = setInterval(function () {
   const now = new Date().getTime();
@@ -35,6 +37,6 @@ const x = setInterval(function () {
     days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "";
+    document.getElementById("demo").innerHTML = "Ramadan is Running";
   }
 }, 1000);
